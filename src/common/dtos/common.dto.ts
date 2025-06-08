@@ -26,3 +26,12 @@ export class BaseEntityDTO implements IBaseEntity {
   })
   deletedAt?: string
 }
+
+export class DataResponseDTO<T> {
+  @ApiProperty({
+    description: 'List of data',
+    example: [],
+    type: [Object],
+  })
+  data: T[]
+}
