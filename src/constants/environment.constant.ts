@@ -7,8 +7,8 @@ export const env = {
   database: {
     host: process.env.DB_HOST,
     port: +(process.env.DB_PORT || 5432),
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
     dbname: process.env.DB_DATABASE,
     sync: !!process.env.DB_SYNC,
   },
