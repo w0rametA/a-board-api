@@ -12,4 +12,7 @@ export const env = {
     dbname: process.env.DB_DATABASE,
     sync: !!process.env.DB_SYNC,
   },
+  jwt: {
+    accessTokenSecret: process.env.ACCESS_TOKEN_SECRET_KEY,
+  },
 }
